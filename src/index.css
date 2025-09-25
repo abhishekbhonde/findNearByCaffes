@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 20% 98%;
+    --foreground: 25 60% 15%;
+
+    --card: 35 25% 96%;
+    --card-foreground: 25 50% 20%;
+
+    --popover: 35 25% 96%;
+    --popover-foreground: 25 50% 20%;
+
+    --primary: 25 65% 45%;
+    --primary-foreground: 35 20% 98%;
+
+    --secondary: 30 40% 85%;
+    --secondary-foreground: 25 60% 25%;
+
+    --muted: 30 25% 90%;
+    --muted-foreground: 25 30% 50%;
+
+    --accent: 20 80% 60%;
+    --accent-foreground: 35 20% 98%;
+
+    /* Coffee-themed colors */
+    --coffee-brown: 25 65% 35%;
+    --coffee-light: 30 40% 75%;
+    --coffee-cream: 35 30% 95%;
+    --coffee-accent: 20 80% 55%;
+    
+    /* Gradients */
+    --gradient-coffee: linear-gradient(135deg, hsl(var(--coffee-brown)), hsl(var(--accent)));
+    --gradient-map: linear-gradient(180deg, hsl(var(--background)), hsl(var(--coffee-cream)));
+    
+    /* Shadows & Effects */
+    --shadow-cafe: 0 10px 30px -10px hsl(var(--coffee-brown) / 0.3);
+    --shadow-marker: 0 5px 15px -5px hsl(var(--accent) / 0.4);
+    --shadow-glow: 0 0 20px hsl(var(--coffee-accent) / 0.3);
+    --shadow-elegant: 0 20px 40px -10px hsl(var(--coffee-brown) / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 50% 8%;
+    --foreground: 35 20% 95%;
+
+    --card: 25 45% 12%;
+    --card-foreground: 35 20% 95%;
+
+    --popover: 25 45% 12%;
+    --popover-foreground: 35 20% 95%;
+
+    --primary: 35 20% 95%;
+    --primary-foreground: 25 50% 15%;
+
+    --secondary: 25 35% 20%;
+    --secondary-foreground: 35 20% 95%;
+
+    --muted: 25 35% 18%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 20 75% 55%;
+    --accent-foreground: 25 50% 8%;
+
+    /* Dark mode coffee colors */
+    --coffee-brown: 25 45% 25%;
+    --coffee-light: 30 25% 35%;
+    --coffee-cream: 25 40% 15%;
+    --coffee-accent: 20 75% 50%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar styles */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--coffee-light)) transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--coffee-light));
+    border-radius: 2px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--coffee-accent));
+  }
+  
+  .scrollbar-thumb-coffee-light {
+    scrollbar-color: hsl(var(--coffee-light)) transparent;
+  }
+  
+  .scrollbar-track-transparent {
+    scrollbar-color: hsl(var(--coffee-light)) transparent;
+  }
+  
+  /* Text line clamp utility */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

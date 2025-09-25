@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Blue Tokai Coffee Roasters",
+    "coordinates": [73.8567, 18.5204],
+    "address": "Koregaon Park, Pune",
+    "description": "Specialty coffee roasters with excellent single origin beans",
+    "rating": 4.5,
+    "type": "Specialty Coffee"
+  },
+  {
+    "id": 2,
+    "name": "Cafe Goodluck",
+    "coordinates": [73.8431, 18.5158],
+    "address": "FC Road, Pune",
+    "description": "Iconic Pune cafe famous for bun maska and Irani chai",
+    "rating": 4.3,
+    "type": "Irani Cafe"
+  },
+  {
+    "id": 3,
+    "name": "The Flour Works",
+    "coordinates": [73.8567, 18.5314],
+    "address": "Kalyani Nagar, Pune",
+    "description": "Artisanal bakery and cafe with freshly baked goods",
+    "rating": 4.4,
+    "type": "Bakery Cafe"
+  },
+  {
+    "id": 4,
+    "name": "Starbucks Reserve",
+    "coordinates": [73.8397, 18.5089],
+    "address": "Phoenix MarketCity, Pune",
+    "description": "Premium Starbucks experience with reserve coffee",
+    "rating": 4.2,
+    "type": "Chain Cafe"
+  },
+  {
+    "id": 5,
+    "name": "Vaishali Restaurant",
+    "coordinates": [73.8431, 18.5158],
+    "address": "FC Road, Pune",
+    "description": "Famous South Indian breakfast and filter coffee",
+    "rating": 4.6,
+    "type": "Traditional Cafe"
+  },
+  {
+    "id": 6,
+    "name": "German Bakery",
+    "coordinates": [73.8567, 18.5204],
+    "address": "Koregaon Park, Pune",
+    "description": "Continental cafe with fresh baked breads and coffee",
+    "rating": 4.1,
+    "type": "Continental Cafe"
+  },
+  {
+    "id": 7,
+    "name": "Cafe Coffee Day",
+    "coordinates": [73.8077, 18.5642],
+    "address": "Aundh, Pune",
+    "description": "Popular Indian coffee chain with variety of beverages",
+    "rating": 3.9,
+    "type": "Chain Cafe"
+  },
+  {
+    "id": 8,
+    "name": "Artjam Cafe",
+    "coordinates": [73.8282, 18.5089],
+    "address": "Baner, Pune",
+    "description": "Creative space with art, books, and great coffee",
+    "rating": 4.3,
+    "type": "Art Cafe"
+  }
+]
